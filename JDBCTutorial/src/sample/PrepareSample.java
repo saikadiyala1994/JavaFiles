@@ -16,7 +16,7 @@ public static void main(String[] args) throws SQLException {
 		conn=DriverManager.getConnection("jdbc:postgresql://localhost:5432/postgres","postgres","password");
 		pstmt=conn.prepareStatement("insert into cities(name,location) values(?,?)",Statement.RETURN_GENERATED_KEYS);
 		String[] city={"a","b","c","d"};
-		System.out.println("Hello");
+		System.out.println("Hai");
 		String[] location={"A","B","C","D"};
 		for (int i = 0; i < location.length; i++) {
 			pstmt.setString(1, city[i]);
