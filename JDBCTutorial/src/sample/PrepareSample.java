@@ -1,3 +1,4 @@
+
 package sample;
 
 import java.sql.Connection;
@@ -9,7 +10,9 @@ import java.sql.Statement;
 
 public class PrepareSample {
 public static void main(String[] args) throws SQLException {
-	Connection conn;
+
+	hello world
+		Connection conn;
 	PreparedStatement pstmt;
 	try {
 		Class.forName("org.postgresql.Driver");
